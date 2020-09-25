@@ -16,7 +16,5 @@ for index, element in enumerate(given):
         deciphered += element
         continue
 
-    deciphered += alpha[(alpha.index(element) - index) % len(alpha)]
+    deciphered += alpha[(alpha.index(element) - index) % 26]
 print(deciphered)
-
-flag = ""
